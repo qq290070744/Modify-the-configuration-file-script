@@ -25,7 +25,7 @@ def add(dic):#定义添加的函数
     chalist=cha(backend_v)#调用查询函数
 
 
-    if chalist or backend_v:#如果backebd下有内容存在则在下面添加一条记录
+    if chalist and backend_v:#如果backebd下有内容存在则在下面添加一条记录
         if record_v in chalist:#如果要添加的内容已存在，则不添加，提示重新输入
             print("添加的内容已存在，请重新输入")
             II()
